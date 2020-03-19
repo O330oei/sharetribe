@@ -149,7 +149,7 @@ group :test do
 
   gem 'fake_stripe', git: 'https://github.com/ithouse/fake_stripe.git', ref: '42b9dd09a1db3fb2b7ec11809ac93647f178a115'
   gem 'poltergeist'
-  gem 'puma'
+  gem 'puma', '>= 3.12.4'
   gem 'webdrivers'
 end
 
