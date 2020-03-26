@@ -2,7 +2,7 @@ source 'https://rubygems.org'
 
 ruby '2.6.2'
 
-gem 'rails', '5.2.3'
+gem 'rails', '5.2.4.2'
 
 gem 'coffee-rails', '~> 4.2.2'
 gem 'uglifier', '~> 3.2.0'
@@ -10,7 +10,7 @@ gem 'uglifier', '~> 3.2.0'
 gem 'sass-rails', '~> 5.0.6'
 gem 'compass-rails', '~> 3.0.2'
 
-gem 'jquery-rails', '~> 4.3.1'
+gem 'jquery-rails', '~> 4.3.4'
 
 # Bundle the extra gems:
 
@@ -55,7 +55,7 @@ gem 'devise-encryptable', '~> 0.2.0'
 gem "omniauth-facebook", '~> 5.0.0'
 gem "omniauth-google-oauth2", '>= 0.6.0'
 gem "omniauth-linkedin-oauth2", '>= 1.0.0'
-gem "omniauth-rails_csrf_protection", '~> 0.1.2'
+gem "omniauth-rails_csrf_protection", "~> 0.1.2"
 
 # Dynamic form adds helpers that are needed, e.g. error_messages
 gem 'dynamic_form', '~> 1.1.4'
@@ -71,7 +71,7 @@ gem 'mercury-rails',
 gem 'countries', '~> 2.0.8'
 gem "mail_view", '~> 2.0.4'
 gem 'statesman', '~> 2.0.1'
-gem "premailer-rails", '~> 1.10.3'
+gem "premailer-rails", "~> 1.10.3"
 gem "css_parser", '~> 1.7.0'
 gem 'stringex', '~> 2.7.1'
 gem 'paypal-sdk-permissions', '~> 1.96.4'
@@ -87,7 +87,7 @@ gem 'public_suffix', '~> 2.0.5' # Needed currently to set GA hostname right, pro
 gem 'activerecord-session_store', '~> 1.1.3'
 
 gem 'faraday', '~> 0.13.0'
-gem 'faraday_middleware', '~> 0.11.0'
+gem 'faraday_middleware', '~> 0.12.0'
 gem 'faraday-encoding', '~> 0.0.4'
 
 gem "react_on_rails", ">= 11.3.0"
@@ -130,7 +130,7 @@ end
 
 group :test do
   gem 'capybara', '~> 3.16.2'
-  gem "rspec-rails", '~> 3.8.2'
+  gem "rspec-rails", "~> 3.8.2"
 
   gem 'cucumber-rails', '~> 1.6.0', require: false # require: false is needed for cucumber-rails
 
@@ -148,9 +148,9 @@ group :test do
   gem 'rspec_junit_formatter'
 
   gem 'fake_stripe', git: 'https://github.com/ithouse/fake_stripe.git', ref: '42b9dd09a1db3fb2b7ec11809ac93647f178a115'
-  gem 'poltergeist'
-  gem 'puma'
-  gem 'webdrivers'
+  gem 'poltergeist', '>= 1.18.1'
+  gem 'puma', '>= 3.12.4'
+  gem 'webdrivers', '>= 3.7.2'
 end
 
 group :development, :test do
